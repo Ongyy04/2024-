@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Letter</title>
+    <!-- 외부 CSS 파일을 링크합니다. 이 파일은 페이지의 스타일을 정의합니다. -->
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <!-- 카카오 SDK를 로드합니다. 카카오 로그인 기능을 사용하기 위함입니다. -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <!-- 페이지의 JavaScript 동작을 정의한 파일을 defer 속성으로 비동기로 로드합니다. -->
+    <script src="../static/js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- 첫 번째 페이지 (숨겨질 가능성 있음) -->
+    <div id="page1" class="page">
+      <!-- 로고 이미지 출력 -->
+      <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo" />
+    </div>
+    
+    <!-- 두 번째 페이지 (로그인 폼이 있는 메인 페이지) -->
+    <div id="page2" class="page hidden">
+      <div class="welcome-row">
+        <!-- 로고 이미지 출력 -->
+        <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo" />
+      </div>
+      <div class="social_row">
+        <!-- 카카오 로그인 버튼 -->
+        <a
+          href="#"
+          id="kakao-login-btn"
+          title="Use kakao"
+          onclick="loginWithKakao()"
+        >
+          <!-- 카카오 로그인 마크 이미지 -->
+          <img
+            id="kakaotalk"
+            src="{{ url_for('static', filename='kakao_mark.png') }}"
+            alt="kakao"
+          />
+        </a>
+      </div>
+
+      <!-- 이메일과 비밀번호를 이용한 로그인 폼 -->
+      <form id="login-form" class="login-form" method="post">
+        <div class="input_wrapper">
+            <input
+                type="email"
+                id="email"
+                name="email"
+                class="input_field"
+                placeholder="Your Email"
+                required
+            />
+            <label for="email" class="input_label">E-mail:</label>
+        </div>
+        <div class="input_wrapper">
+            <input
+                type="password"
+                id="password"
+                name="password"
+                class="input_field"
+                placeholder="Your password"
+                pattern="^(?=.*[A-Za-Z])(?=.*\d)[A-Za-z\d]{6,}$"
+                required
+            />
+            <label for="password" class="input_label">Password:</label>
+        </div>
+        <div id="error-message" class="hiddenme">
+            <!-- 여기에 오류 메시지가 표시됩니다 -->
+        </div>
+        <div>
+            <button type="submit" class="login-form_button">로그인</button>
+        </div>
+    </form>
+    
+      <br />
+      <!-- 계정 생성 링크 -->
+      <div class="login-form_action">
+        <div class="login-form_row">
+          <span>처음 오셨나요?</span>
+          <!-- 계정 생성 페이지로 이동하는 링크 -->
+          <a href="{{ url_for('create_account') }}" title="Create Account"
+            >계정 만들기</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

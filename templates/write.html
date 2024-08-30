@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter of Time</title>
+    <link rel="stylesheet" href="../static/css/write.css" />
+    <script src="../static/js/write.js" defer></script>
+  </head>
+  <body>
+    <form method="post" action="{{ url_for('submit_letter') }}">
+      <div id="date">
+        <label for="year">year</label>
+        <select id="year" class="date-select" name="year">
+          <!-- 연도 옵션 -->
+        </select>
+
+        <label for="month">month</label>
+        <select id="month" class="date-select" name="month">
+          <!-- 월 옵션 -->
+        </select>
+
+        <label for="day">day</label>
+        <select id="day" class="date-select" name="day">
+          <!-- 일 옵션 -->
+        </select>
+        <button type="submit" id="date-submit">전송</button>
+        <button type="button" id="back-button" onclick="location.href='select'">
+          뒤로가기
+        </button>
+      </div>
+
+      <div id="fixed-date">
+        <input
+          type="radio"
+          id="6m"
+          class="date-button"
+          name="fixed"
+          value="6month"
+        />
+        <label for="6m">6개월</label>
+        <input
+          type="radio"
+          id="1y"
+          class="date-button"
+          name="fixed"
+          value="1year"
+        />
+        <label for="1y">1년</label>
+      </div>
+
+      <div id="sender">
+        <label for="sender-name">보내는 이</label>
+        <input
+          type="text"
+          id="sender-name"
+          name="sender-name"
+          placeholder="이름 입력"
+        />
+        <label for="sender-phone"></label>
+        <input
+          type="text"
+          id="sender-phone"
+          name="sender-phone"
+          placeholder="전화번호 입력"
+        />
+      </div>
+
+      <div id="receiver">
+        <label for="receiver-name">받는 이</label>
+        <input
+          type="text"
+          id="receiver-name"
+          name="receiver-name"
+          placeholder="이름 입력"
+        />
+        <label for="receiver-phone"></label>
+        <input
+          type="text"
+          id="receiver-phone"
+          name="receiver-phone"
+          placeholder="전화번호 입력"
+        />
+      </div>
+
+      <div id="letter">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <label for="letter-title">편지 제목 작성</label>
+          <label for="anonymous">
+            익명
+            <input type="checkbox" id="anonymous" name="anonymous" />
+          </label>
+        </div>
+        <input
+          type="text"
+          id="letter-title"
+          name="letter-title"
+          style="width: 100%; margin-bottom: 10px"
+          placeholder="제목 입력"
+        />
+      </div>
+
+      <div class="notepad-container">
+        <textarea
+          name="notepad"
+          placeholder="여기에 텍스트를 입력하세요..."
+        ></textarea>
+      </div>
+    </form>
+  </body>
+</html>

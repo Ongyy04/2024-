@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Letter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/select.css') }}" />
+    <script src="{{ url_for('static', filename='js/select.js') }}" defer></script>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo" alt="로고 이미지">
+    <div id="write_new" class="box" data-url="{{ url_for('write_letter') }}">새 편지 작성</div>
+<div id="check_mine" class="box" data-url="{{ url_for('view_letter') }}">내게 온 편지 확인</div>
+
+    <img src="{{ url_for('static', filename='postbox.png') }}" class="postbox" alt="우체통 이미지">
+</body>
+</html>

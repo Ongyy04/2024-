@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/create.css') }}">
+</head>
+<body>
+    <form class="login-form" method="post" action="/register">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo">
+        <div class="input_wrapper">
+            <input
+                type="email"
+                id="email"
+                name="email"
+                class="input_field"
+                placeholder=" "
+                required
+            />
+            <label for="email" class="input_label">E-mail:</label>
+        </div>
+        <div class="input_wrapper">
+            <input
+                type="password"
+                id="password"
+                name="password"
+                class="input_field"
+                placeholder=" "
+                required
+            />
+            <label for="password" class="input_label">Password:</label>
+        </div>
+        <div class="input_wrapper">
+            <input
+                type="password"
+                id="password-check"
+                name="password-check"
+                class="input_field"
+                placeholder=" "
+                required
+            />
+            <label for="password-check" class="input_label">Password Check:</label>
+        </div>
+        <div class="input_wrapper">
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="input_field"
+                placeholder=" "
+                required
+            />
+            <label for="phone" class="input_label">Phone number:</label>
+        </div>
+        <div>
+            <button type="submit" class="signup-button">회원가입</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시간의 편지</title>
+    <style>
+      @font-face {
+        font-family: "main-font";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2")
+          format("woff2");
+        font-style: normal;
+        font-weight: 900;
+      }
+
+      body {
+        font-family: "main-font", "Arial", sans-serif;
+        background-color: #ad7215;
+        color: white;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+
+      .container {
+        background-color: #ad7215;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .logo {
+        width: 250px; /* Increased logo width */
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .message {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .subtext {
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+
+      .button {
+        background-color: #f2e8b6;
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .link {
+        font-size: 12px;
+        color: #333;
+        text-decoration: underline;
+        margin-top: 20px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../static/logo.jpg" alt="시간의 편지" class="logo" />
+      <div class="message">느림이 주는 따뜻함, 특별한 메시지</div>
+      <div class="subtext">편지가 전송되었습니다</div>
+      <a href="{{ url_for('select') }}" class="button">홈으로 가기</a>
+      <a href="{{ url_for('view_letter') }}" class="link"
+        >내게 온 편지 확인하기</a
+      >
+    </div>
+  </body>
+</html>

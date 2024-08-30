@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Ownglyph_meetme-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 기본 폰트 설정 */
+  background-color: #fffdd0;
+  color: #3c3f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #ad7215;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+h2,
+.letter-title,
+.letter-preview,
+.letter-timer,
+.open-button {
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 적용 */
+}
+
+/* 나머지 CSS 코드 유지 */
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 변경 */
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  background-color: #fffdd0;
+  width: 60%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: #3c3f00;
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 변경 */
+}
+
+#filter {
+  background-color: #fffdd0;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: #3c3f00;
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 변경 */
+}
+
+.letter {
+  background-color: #fffdd0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 변경 */
+}
+
+.letter-header {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  width: 24px;
+  height: 24px;
+  background-color: #3c3f00;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>')
+    center / contain no-repeat;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>')
+    center / contain no-repeat;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.star.favorited {
+  background-color: gold;
+}
+
+.letter-info {
+  flex-grow: 1;
+}
+
+.letter-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #3c3f00;
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 변경 */
+}
+
+.letter-preview {
+  font-size: 14px;
+  margin: 5px 0 0;
+  color: #3c3f00;
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 변경 */
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.letter-timer {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 변경 */
+}
+
+.open-button {
+  background-color: #ad7215;
+  color: #fffdd0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  display: inline-block;
+  font-family: "Ownglyph_meetme-Rg", sans-serif; /* 폰트 변경 */
+}
+
+.letter-timer .message {
+  text-align: center; /* 중앙 정렬 */
+  width: 100%; /* 부모 요소의 너비를 100%로 설정 */
+}
+
+#back-button {
+  font-family: "Ownglyph_meetme-Rg", sans-serif;
+  font-size: 14px;
+  background-color: #3c3f00;
+  color: #fffdd0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}

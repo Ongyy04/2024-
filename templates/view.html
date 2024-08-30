@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>느린 우체통</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/view.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>내게 온 편지 확인</h2>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="보낸 이 검색하기" />
+        <select id="filter">
+          <option value="latest">최신순</option>
+          <option value="oldest">오래된 순</option>
+        </select>
+      </div>
+      <div id="letter-list">
+        {% for letter in letters %}
+        <div class="letter" letter-id="{{ letter['_id'] }}" data-sender="{{ letter['sender_name'] }}" data-original-index="{{ loop.index0 }}">
+            <div class="letter-title">{{ letter['letter_title'] }}</div>
+            <div class="letter-timer" data-time="{{ letter['time_left'] }}">
+              {{ letter['time_left'] | round(0, 'floor') }}일 0시간 0분 0초 남음
+          </div>
+          
+            <div class="letter-preview hidden">{{ letter['preview'] }}</div>
+            <button class="open-button {% if not letter.can_open %}hidden{% endif %}" onclick="openLetter(this)">
+                편지 열기
+            </button>
+        </div>
+        {% endfor %}
+      </div>
+      
+      <!-- 뒤로가기 버튼 -->
+      <button type="button" id="back-button" onclick="location.href='select'">
+        뒤로가기
+      </button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/view.js') }}" defer></script>
+  </body>
+</html>

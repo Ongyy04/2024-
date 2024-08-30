@@ -1,0 +1,56 @@
+:root {
+  --primary: #ad7215;
+  --primary-light: #d0af7a;
+  --primary-dark: #b5986a;
+  --letter-note: #fffdd0;
+  --text: #462c27;
+  --text-dark: #3c3f00;
+  --white: #ffffff;
+  --gray: #767676;
+}
+
+@font-face {
+  font-family: main_font;
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/Ownglyph_meetme-Rg.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+}
+
+body {
+  background-color: var(--primary);
+  font-family: main_font;
+  font-size: 18px;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 350px; /* 원하는 크기로 조정 */
+  height: auto; /* 비율 유지 */
+  margin-bottom: -2rem; /* 간격 조정 */
+}
+
+.postbox {
+  width: 200px; /* 원하는 크기로 조정 */
+  height: auto; /* 비율 유지 */
+  margin-bottom: -2rem; /* 간격 조정 */
+}
+
+.box {
+  background-color: var(--primary-light);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  -webkit-text-stroke: 0.2px var(--primary);
+  text-shadow: 0 0.2rem 10px #3c3f00;
+  transition: background-color 0.3s;
+  margin-top: -1rem; /* 간격 조정 */
+}
+
+.box:hover {
+  background-color: var(--primary-dark);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="../static/css/phonenum.css" />
+</head>
+<body>
+    <form class="login-form" method="post" action="{{ url_for('kakao_phone') }}">
+        <img src="../static/logo.jpg" class="logo" />
+        <div class="input_wrapper">
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="input_field"
+                placeholder=" "
+                required
+            />
+            <label for="phone" class="input_label">전화번호:</label>
+        </div>
+        <div>
+            <button type="submit" class="signup-button">회원가입</button>
+        </div>
+    </form>
+</body>
+</html>
