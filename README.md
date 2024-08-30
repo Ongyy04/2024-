@@ -5,7 +5,6 @@
 ## 👋🏻 프로젝트 소개
 지금까지의 답답했던 기억을 보내고, 특별한 순간을 미래로부터의 선물로 받아보세요. 
 시간의 편지는 과거의 자신 또는 친구들에게 보낸 메시지를 미래의 어느 날 받는 웹서비스입니다. 
-사용자는 마음과 시간을 담아서 편지를 작성하고, 지정된 날짜에 발송할 수 있습니다. 
 감성적인 메시지를 오랜 시간 보관했다가 원하는 순간에 받아볼 수 있습니다.
 
 🔗URL [http://lettersoftime.com/](http://lettersoftime.com/)
@@ -23,14 +22,10 @@
 
 ## ⚙️ 기술 스택
 ### Front-end
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5 badge">
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white" alt="javascript badge">
-<img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3 badge">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5 badge">  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white" alt="javascript badge">  <img src="https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3 badge">
 
 ### Back-end
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="python badge">
-<img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="flask badge">
-<img src="https://img.shields.io/badge/nodedotjs-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodedotjs badge">
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="python badge">  <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="flask badge">  <img src="https://img.shields.io/badge/nodedotjs-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodedotjs badge">
 
 ## 🗣 팀원 소개
 
