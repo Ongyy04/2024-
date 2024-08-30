@@ -32,9 +32,10 @@
 ## 🗣 팀원 소개
 
 <table>
+
   <tbody>
     <tr>
-      <td align="center"><a href=""><img src="" width="100px;" alt="팀장: 오은서"/><br /><sub><b>팀장 : 오은서</b></sub></a><br /></td>
+      <td align="center"><a href=""><img src="![화면 캡처 2024-07-23 114052](https://github.com/user-attachments/assets/d5a8a20b-ac7c-4b88-9d0d-ea374b2fd39b)" width="100px;" alt="팀장: 오은서"/><br /><sub><b>팀장 : 오은서</b></sub></a><br /></td>
       <td align="center"><a href=""><img src="" width="100px;" alt="팀원: 서동완"/><br /><sub><b>팀원 : 서동완</b></sub></a><br /></td>
       <td align="center"><a href=""><img src="" width="100px;" alt="팀원: 정정"/><br /><sub><b>팀원 : 정정</b></sub></a><br /></td>
     </tr>
