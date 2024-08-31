@@ -31,12 +31,11 @@
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="python badge">  <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="flask badge">  <img src="https://img.shields.io/badge/nodedotjs-5FA04E?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodedotjs badge">
 
 ## 🗣 팀원 소개
-
 <table>
   <tbody>
     <tr>
       <td align="center"><a href=""><img src="https://github.com/user-attachments/assets/d5a8a20b-ac7c-4b88-9d0d-ea374b2fd39b" width="100px;" alt="팀장: 오은서"/><br /><sub><b>팀장 : 오은서</b></sub></a><br /></td>
-      <td align="center"><a href=""><img src="" width="100px;" alt="팀원: 서동완"/><br /><sub><b>팀원 : 서동완</b></sub></a><br /></td>
+     <td align="center"><a href=""><img src="https://github.com/user-attachments/assets/76ddf8d9-72d1-485d-8709-cd94f295d06f" width="100px;" alt="팀원: 서동완"/><br /><sub><b>팀원 : 서동완</b></sub></a><br /></td>
       <td align="center"><a href=""><img src="" width="100px;" alt="팀원: 정정하"/><br /><sub><b>팀원 : 정정하</b></sub></a><br /></td>
     </tr>
   </tbody>
